@@ -4,41 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Project Hub</title>
+    <title>Website Portfolio | Online Project Hub</title>
+
+    <meta name="description" content="Overzicht van meerdere websites en projecten zoals travel, sport, lifestyle en shopping platforms.">
+
+    <meta name="robots" content="index, follow">
 
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background: #f3f4f6;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
             color: #111;
         }
 
         header {
-            background: #111827;
+            background: #0f172a;
             color: white;
-            padding: 40px;
+            padding: 50px 20px;
             text-align: center;
         }
 
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        header p {
+            opacity: 0.8;
+        }
+
         main {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
-            padding: 30px;
+            padding: 30px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
         }
 
         .card {
             background: white;
             padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #444;
         }
 
         a {
+            display: inline-block;
+            margin-top: 10px;
             color: #2563eb;
             font-weight: bold;
             text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #e5e7eb;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -46,28 +83,57 @@
 <body>
 
 <header>
-    <h1>Website Project Hub</h1>
-    <p>Automatische landing page structuur</p>
+    <h1>Project Portfolio Hub</h1>
+    <p>Overzicht van al onze websites en online projecten</p>
 </header>
 
 <main>
 
-    <div class="card">
-        <h2>Ledervet</h2>
-        <a href="./ledervet/index.html">Open pagina →</a>
-    </div>
+    <div class="grid">
 
-    <div class="card">
-        <h2>Backlink Hulp</h2>
-        <a href="./backlinkhulp/index.html">Open pagina →</a>
-    </div>
+        <div class="card">
+            <h2>Beyond Compared</h2>
+            <p>Vergelijking & review platform voor producten en diensten.</p>
+            <a href="https://beyondcompared.com" target="_blank">Bezoek site →</a>
+        </div>
 
-    <div class="card">
-        <h2>De Vakantiewinkel</h2>
-        <a href="./vakantiewinkel/index.html">Open pagina →</a>
+        <div class="card">
+            <h2>Seek Holidays</h2>
+            <p>Reisinspiratie, vakanties en bestemmingen wereldwijd.</p>
+            <a href="https://seekholidays.com" target="_blank">Bezoek site →</a>
+        </div>
+
+        <div class="card">
+            <h2>Sportivaro</h2>
+            <p>Sport, fitness en actieve lifestyle content.</p>
+            <a href="https://sportivaro.com" target="_blank">Bezoek site →</a>
+        </div>
+
+        <div class="card">
+            <h2>Bellinara</h2>
+            <p>Lifestyle en premium content platform.</p>
+            <a href="https://bellinara.com" target="_blank">Bezoek site →</a>
+        </div>
+
+        <div class="card">
+            <h2>Bellevella</h2>
+            <p>Mode, beauty en elegante lifestyle inspiratie.</p>
+            <a href="https://bellevella.com" target="_blank">Bezoek site →</a>
+        </div>
+
+        <div class="card">
+            <h2>Plantena</h2>
+            <p>Planten, tuinieren en groene lifestyle informatie.</p>
+            <a href="https://plantena.nl" target="_blank">Bezoek site →</a>
+        </div>
+
     </div>
 
 </main>
+
+<footer>
+    © 2026 Project Hub | Alle rechten voorbehouden
+</footer>
 
 </body>
 </html>
